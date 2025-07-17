@@ -1,0 +1,251 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7811,        241]
+NotebookOptionsPosition[      5867,        197]
+NotebookOutlinePosition[      6270,        213]
+CellTagsIndexPosition[      6227,        210]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+
+Define the cubic equation for rc\
+\>", "Subsection",
+ CellChangeTimes->{{3.9216940577830505`*^9, 
+  3.9216940848008156`*^9}},ExpressionUUID->"4dafae33-1ea1-45fd-ba9d-\
+d3e1c7b44892"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"cubic", "[", 
+    RowBox[{"r_", ",", " ", "M_", ",", " ", "a_"}], "]"}], " ", "=", " ", 
+   RowBox[{
+    RowBox[{"r", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"r", "-", 
+        RowBox[{"3", " ", "M"}]}], ")"}], "^", "2"}]}], "-", 
+    RowBox[{"4", " ", 
+     RowBox[{"a", "^", "2"}], " ", "M"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.9216940860085897`*^9, 3.9216941119593782`*^9}, {
+  3.921694186274503*^9, 3.9216941906937776`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"6b41a655-5813-4d2c-a048-810a1c0ebbbe"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "4"}], " ", 
+   SuperscriptBox["a", "2"], " ", "M"}], "+", 
+  RowBox[{"r", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "M"}], "+", "r"}], ")"}], "2"]}]}]], "Output",
+ CellChangeTimes->{3.921694192457321*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"48c6188a-6862-4086-8e46-62f6d16cb540"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.9216940565782995`*^9, 
+  3.921694195581425*^9},ExpressionUUID->"d0d05537-dd76-420e-894d-\
+89c0d14994c9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Define the Light Ring prograde/retrograde equations for r.", "Section",
+ CellChangeTimes->{{3.9216940350580816`*^9, 3.921694055292672*^9}, 
+   3.9216941981343594`*^9},ExpressionUUID->"6d467796-4ccf-48be-83d9-\
+693105a6cdc4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rLRprograde", "[", 
+   RowBox[{"M_", ",", "a_"}], "]"}], " ", "=", " ", 
+  RowBox[{"2", " ", "M", " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     RowBox[{"Cos", "[", 
+      RowBox[{
+       RowBox[{"2", "/", "3"}], "*", 
+       RowBox[{"ArcCos", "[", 
+        RowBox[{"a", "/", "M"}], "]"}]}], "]"}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.921693931846574*^9, 3.9216939974254274`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"e914ad2f-188a-4269-94ac-ce58fc6ba8e6"],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "M", " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "+", 
+    RowBox[{"Cos", "[", 
+     RowBox[{
+      FractionBox["2", "3"], " ", 
+      RowBox[{"ArcCos", "[", 
+       FractionBox["a", "M"], "]"}]}], "]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.921693999176792*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"8b3c9688-8033-49f0-847f-1034a079c0d9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rLRretrograde", "[", 
+   RowBox[{"M_", ",", "a_"}], "]"}], " ", "=", " ", 
+  RowBox[{"2", " ", "M", " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     RowBox[{"Cos", "[", 
+      RowBox[{
+       RowBox[{"2", "/", "3"}], "*", 
+       RowBox[{"ArcCos", "[", 
+        RowBox[{
+         RowBox[{"-", "a"}], "/", "M"}], "]"}]}], "]"}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.921694007521784*^9, 3.9216940150407467`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"0f612a4f-0edd-4a57-b987-b6d301bc21a8"],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "M", " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "+", 
+    RowBox[{"Cos", "[", 
+     RowBox[{
+      FractionBox["2", "3"], " ", 
+      RowBox[{"ArcCos", "[", 
+       RowBox[{"-", 
+        FractionBox["a", "M"]}], "]"}]}], "]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.9216940154927444`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"54adf194-3144-4a56-a709-63d369f0c697"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+
+Put the Light ring equations into the cubic equation and see if it evaluates \
+to zero.
+If it does, then (5.18) is numerically verified.\
+\>", "Subsection",
+ CellChangeTimes->{{3.921694203198657*^9, 
+  3.9216942433837953`*^9}},ExpressionUUID->"ff3dcd3d-f0c7-47ac-abe0-\
+359e08e0f7bd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"cubic", "[", 
+    RowBox[{
+     RowBox[{"rLRprograde", "[", 
+      RowBox[{"M", ",", "a"}], "]"}], ",", "M", ",", "a"}], "]"}], "//", 
+   "Simplify"}]}]], "Input",
+ CellChangeTimes->{{3.921694244937072*^9, 3.9216942482569313`*^9}, {
+  3.921694282309698*^9, 3.921694308567418*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"a1e3afba-3c7a-48b4-aa65-744b1eeebfbd"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.9216943031226225`*^9, 3.9216943089638624`*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"134887fe-0d02-460f-9f62-c21be00de4c6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"cubic", "[", 
+   RowBox[{
+    RowBox[{"rLRretrograde", "[", 
+     RowBox[{"M", ",", "a"}], "]"}], ",", "M", ",", "a"}], "]"}], "//", 
+  "Simplify"}]], "Input",
+ CellChangeTimes->{{3.9216943169665956`*^9, 3.9216943178199005`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"d149dd7d-a0bc-4d5d-97ff-ded1ae2c8571"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.921694319308378*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"42c23756-fca8-4103-a6cc-efd4356d226f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+
+Both r values result in 0 so the solutions are numerically verified.\
+\>", "Subsection",
+ CellChangeTimes->{{3.921694321629635*^9, 
+  3.921694358494136*^9}},ExpressionUUID->"ffb4009f-de41-4001-8a90-\
+7f629037456c"]
+}, Open  ]]
+},
+WindowSize->{571, 418},
+WindowMargins->{{189, Automatic}, {17, Automatic}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"efba749b-3d8d-41d4-9aa6-4f96db4fec0f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 193, 6, 81, "Subsection",ExpressionUUID->"4dafae33-1ea1-45fd-ba9d-d3e1c7b44892"],
+Cell[CellGroupData[{
+Cell[798, 32, 595, 15, 48, "Input",ExpressionUUID->"6b41a655-5813-4d2c-a048-810a1c0ebbbe"],
+Cell[1396, 49, 396, 12, 32, "Output",ExpressionUUID->"48c6188a-6862-4086-8e46-62f6d16cb540"]
+}, Open  ]],
+Cell[1807, 64, 152, 3, 28, "Input",ExpressionUUID->"d0d05537-dd76-420e-894d-89c0d14994c9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1996, 72, 230, 3, 105, "Section",ExpressionUUID->"6d467796-4ccf-48be-83d9-693105a6cdc4"],
+Cell[CellGroupData[{
+Cell[2251, 79, 506, 13, 28, "Input",ExpressionUUID->"e914ad2f-188a-4269-94ac-ce58fc6ba8e6"],
+Cell[2760, 94, 373, 10, 48, "Output",ExpressionUUID->"8b3c9688-8033-49f0-847f-1034a079c0d9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3170, 109, 533, 14, 28, "Input",ExpressionUUID->"0f612a4f-0edd-4a57-b987-b6d301bc21a8"],
+Cell[3706, 125, 399, 11, 48, "Output",ExpressionUUID->"54adf194-3144-4a56-a709-63d369f0c697"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4142, 141, 295, 8, 135, "Subsection",ExpressionUUID->"ff3dcd3d-f0c7-47ac-abe0-359e08e0f7bd"],
+Cell[CellGroupData[{
+Cell[4462, 153, 428, 10, 48, "Input",ExpressionUUID->"a1e3afba-3c7a-48b4-aa65-744b1eeebfbd"],
+Cell[4893, 165, 176, 2, 32, "Output",ExpressionUUID->"134887fe-0d02-460f-9f62-c21be00de4c6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5106, 172, 342, 8, 28, "Input",ExpressionUUID->"d149dd7d-a0bc-4d5d-97ff-ded1ae2c8571"],
+Cell[5451, 182, 148, 2, 32, "Output",ExpressionUUID->"42c23756-fca8-4103-a6cc-efd4356d226f"]
+}, Open  ]]
+}, Open  ]],
+Cell[5626, 188, 225, 6, 108, "Subsection",ExpressionUUID->"ffb4009f-de41-4001-8a90-7f629037456c"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
